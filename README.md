@@ -1,89 +1,28 @@
-# Go Gin Example [![rcard](https://goreportcard.com/badge/github.com/VINDA-98/gin-example)](https://goreportcard.com/report/github.com/VINDA-98/gin-example) [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://godoc.org/github.com/VINDA-98/gin-example) [![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://raw.githubusercontent.com/EDDYCJY/go-gin-example/master/LICENSE)
+# Go Gin Example
 
-An example of gin contains many useful features
+[简体中文](README.zh-CN.md)
 
-[简体中文](https://github.com/VINDA-98/gin-example/blob/master/README_ZH.md)
+A Gin example for a small blog API, based on [EDDYCJY/go-gin-example](https://github.com/EDDYCJY/go-gin-example). The code covers article and tag CRUD, JWT middleware, MySQL persistence via GORM, Redis caching, and Swagger documentation. It also includes examples of image upload, Excel tag import and export, and article poster generation with QR codes.
 
-## Installation
-```
-$ go get github.com/VINDA-98/gin-example
-```
+## Read the code
 
-## How to run
+| Location | What it shows |
+| --- | --- |
+| [routers/router.go](routers/router.go) | Route registration, including `POST /auth` and the JWT-protected `/api/v1` group. |
+| [service](service) and [models](models) | Article and tag logic, caching and database access. |
+| [docs/swagger.yaml](docs/swagger.yaml) | The Swagger specification bundled with the example. |
 
-### Required
+Use the route registration as the reference if the bundled Swagger specification shows a different method.
 
-- Mysql
-- Redis
+## Run locally
 
-### Ready
+1. Install Go 1.18 or later, MySQL and Redis.
+2. Create a `blog` database and import [docs/sql/blog.sql](docs/sql/blog.sql).
+3. Set the local MySQL and Redis connection details in [conf/app.ini](conf/app.ini). Use a local JWT signing secret.
+4. Start the service from the repository root.
 
-Create a **blog database** and import [SQL](https://github.com/VINDA-98/gin-example/blob/master/docs/sql/blog.sql)
-
-### Conf
-
-You should modify `conf/app.ini`
-
-```
-[database]
-Type = mysql
-User = root
-Password =
-Host = 127.0.0.1:3306
-Name = blog
-TablePrefix = blog_
-
-[redis]
-Host = 127.0.0.1:6379
-Password =
-MaxIdle = 30
-MaxActive = 30
-IdleTimeout = 200
-...
+```sh
+go run .
 ```
 
-### Run
-```
-$ cd $GOPATH/src/go-gin-example
-
-$ go run main.go 
-```
-
-Project information and existing API
-
-```
-[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
- - using env:	export GIN_MODE=release
- - using code:	gin.SetMode(gin.ReleaseMode)
-
-[GIN-debug] GET    /auth                     --> github.com/VINDA-98/gin-example/routers/api.GetAuth (3 handlers)
-[GIN-debug] GET    /swagger/*any             --> github.com/VINDA-98/gin-example/vendor/github.com/swaggo/gin-swagger.WrapHandler.func1 (3 handlers)
-[GIN-debug] GET    /api/v1/tags              --> github.com/VINDA-98/gin-example/routers/api/v1.GetTags (4 handlers)
-[GIN-debug] POST   /api/v1/tags              --> github.com/VINDA-98/gin-example/routers/api/v1.AddTag (4 handlers)
-[GIN-debug] PUT    /api/v1/tags/:id          --> github.com/VINDA-98/gin-example/routers/api/v1.EditTag (4 handlers)
-[GIN-debug] DELETE /api/v1/tags/:id          --> github.com/VINDA-98/gin-example/routers/api/v1.DeleteTag (4 handlers)
-[GIN-debug] GET    /api/v1/articles          --> github.com/VINDA-98/gin-example/routers/api/v1.GetArticles (4 handlers)
-[GIN-debug] GET    /api/v1/articles/:id      --> github.com/VINDA-98/gin-example/routers/api/v1.GetArticle (4 handlers)
-[GIN-debug] POST   /api/v1/articles          --> github.com/VINDA-98/gin-example/routers/api/v1.AddArticle (4 handlers)
-[GIN-debug] PUT    /api/v1/articles/:id      --> github.com/VINDA-98/gin-example/routers/api/v1.EditArticle (4 handlers)
-[GIN-debug] DELETE /api/v1/articles/:id      --> github.com/VINDA-98/gin-example/routers/api/v1.DeleteArticle (4 handlers)
-
-Listening port is 8000
-Actual pid is 4393
-```
-Swagger doc
-
-![image](https://i.imgur.com/bVRLTP4.jpg)
-
-## Features
-
-- RESTful API
-- Gorm
-- Swagger
-- logging
-- Jwt-go
-- Gin
-- Graceful restart or stop (fvbock/endless)
-- App configurable
-- Cron
-- Redis
+Swagger UI is available at `http://localhost:8000/swagger/index.html` with the default port. The upstream [MIT license](https://github.com/EDDYCJY/go-gin-example/blob/master/LICENSE) provides the original project's license terms.
