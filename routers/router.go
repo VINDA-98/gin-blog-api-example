@@ -5,16 +5,16 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	_ "github.com/VINDA-98/gin-example/docs"
+	_ "github.com/VINDA-98/gin-blog-api-example/docs"
 	"github.com/swaggo/gin-swagger"
 	"github.com/swaggo/gin-swagger/swaggerFiles"
 
-	"github.com/VINDA-98/gin-example/middleware/jwt"
-	"github.com/VINDA-98/gin-example/pkg/export"
-	"github.com/VINDA-98/gin-example/pkg/qrcode"
-	"github.com/VINDA-98/gin-example/pkg/upload"
-	"github.com/VINDA-98/gin-example/routers/api"
-	"github.com/VINDA-98/gin-example/routers/api/v1"
+	"github.com/VINDA-98/gin-blog-api-example/middleware/jwt"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/export"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/qrcode"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/upload"
+	"github.com/VINDA-98/gin-blog-api-example/routers/api"
+	"github.com/VINDA-98/gin-blog-api-example/routers/api/v1"
 )
 
 // InitRouter initialize routing information

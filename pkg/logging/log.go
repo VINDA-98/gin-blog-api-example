@@ -2,7 +2,7 @@ package logging
 
 import (
 	"fmt"
-	"github.com/VINDA-98/gin-example/pkg/file"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/file"
 	"log"
 	"os"
 	"path/filepath"

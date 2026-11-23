@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/VINDA-98/gin-example/pkg/e"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/e"
 )
 
 type Article struct {

@@ -1,6 +1,6 @@
 package export
 
-import "github.com/VINDA-98/gin-example/pkg/setting"
+import "github.com/VINDA-98/gin-blog-api-example/pkg/setting"
 
 const EXT = ".xlsx"
 

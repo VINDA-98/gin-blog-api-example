@@ -1,6 +1,6 @@
 package auth_service
 
-import "github.com/VINDA-98/gin-example/models"
+import "github.com/VINDA-98/gin-blog-api-example/models"
 
 type Auth struct {
 	Username string

@@ -3,7 +3,7 @@ package app
 import (
 	"github.com/astaxie/beego/validation"
 
-	"github.com/VINDA-98/gin-example/pkg/logging"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/logging"
 )
 
 // MarkErrors logs error logs

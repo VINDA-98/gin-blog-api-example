@@ -7,12 +7,12 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/VINDA-98/gin-example/models"
-	"github.com/VINDA-98/gin-example/pkg/gredis"
-	"github.com/VINDA-98/gin-example/pkg/logging"
-	"github.com/VINDA-98/gin-example/pkg/setting"
-	"github.com/VINDA-98/gin-example/pkg/util"
-	"github.com/VINDA-98/gin-example/routers"
+	"github.com/VINDA-98/gin-blog-api-example/models"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/gredis"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/logging"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/setting"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/util"
+	"github.com/VINDA-98/gin-blog-api-example/routers"
 )
 
 func init() {
@@ -29,9 +29,9 @@ func init() {
 // @title Golang Gin API
 // @version 1.0
 // @description An example of gin
-// @termsOfService https://github.com/VINDA-98/gin-example
+// @termsOfService https://github.com/VINDA-98/gin-blog-api-example
 // @license.name MIT
-// @license.url https://github.com/VINDA-98/gin-example/blob/master/LICENSE
+// @license.url https://github.com/VINDA-98/gin-blog-api-example/blob/master/LICENSE
 func main() {
 	gin.SetMode(setting.ServerSetting.RunMode)
 

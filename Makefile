@@ -3,7 +3,7 @@
 all: build
 
 build:
-	@go build -v .
+	@go build -v -o gin-blog-api-example .
 
 tool:
 	go vet ./...; true
@@ -13,7 +13,7 @@ lint:
 	golint ./...
 
 clean:
-	rm -rf go-gin-example
+	rm -f gin-blog-api-example
 	go clean -i .
 
 help:

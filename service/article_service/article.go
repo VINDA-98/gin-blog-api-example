@@ -3,10 +3,10 @@ package article_service
 import (
 	"encoding/json"
 
-	"github.com/VINDA-98/gin-example/models"
-	"github.com/VINDA-98/gin-example/pkg/gredis"
-	"github.com/VINDA-98/gin-example/pkg/logging"
-	"github.com/VINDA-98/gin-example/service/cache_service"
+	"github.com/VINDA-98/gin-blog-api-example/models"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/gredis"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/logging"
+	"github.com/VINDA-98/gin-blog-api-example/service/cache_service"
 )
 
 type Article struct {

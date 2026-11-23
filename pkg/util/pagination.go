@@ -4,7 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/unknwon/com"
 
-	"github.com/VINDA-98/gin-example/pkg/setting"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/setting"
 )
 
 // GetPage get page parameters

@@ -1,4 +1,4 @@
-module github.com/VINDA-98/gin-example
+module github.com/VINDA-98/gin-blog-api-example
 
 go 1.18
 

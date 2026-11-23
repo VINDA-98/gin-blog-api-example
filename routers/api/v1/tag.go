@@ -7,13 +7,13 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/unknwon/com"
 
-	"github.com/VINDA-98/gin-example/pkg/app"
-	"github.com/VINDA-98/gin-example/pkg/e"
-	"github.com/VINDA-98/gin-example/pkg/export"
-	"github.com/VINDA-98/gin-example/pkg/logging"
-	"github.com/VINDA-98/gin-example/pkg/setting"
-	"github.com/VINDA-98/gin-example/pkg/util"
-	"github.com/VINDA-98/gin-example/service/tag_service"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/app"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/e"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/export"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/logging"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/setting"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/util"
+	"github.com/VINDA-98/gin-blog-api-example/service/tag_service"
 )
 
 // @Summary Get multiple article tags

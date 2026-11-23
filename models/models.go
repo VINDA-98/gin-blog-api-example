@@ -7,7 +7,7 @@ import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 
-	"github.com/VINDA-98/gin-example/pkg/setting"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/setting"
 	"time"
 )
 

@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 
-	"github.com/VINDA-98/gin-example/pkg/e"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/e"
 )
 
 // BindAndValid binds and validates data

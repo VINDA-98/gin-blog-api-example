@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/VINDA-98/gin-example/pkg/setting"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/setting"
 )
 
 // getLogFilePath get the log file save path

@@ -9,12 +9,12 @@ import (
 	"github.com/360EntSecGroup-Skylar/excelize"
 	"github.com/tealeg/xlsx"
 
-	"github.com/VINDA-98/gin-example/models"
-	"github.com/VINDA-98/gin-example/pkg/export"
-	"github.com/VINDA-98/gin-example/pkg/file"
-	"github.com/VINDA-98/gin-example/pkg/gredis"
-	"github.com/VINDA-98/gin-example/pkg/logging"
-	"github.com/VINDA-98/gin-example/service/cache_service"
+	"github.com/VINDA-98/gin-blog-api-example/models"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/export"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/file"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/gredis"
+	"github.com/VINDA-98/gin-blog-api-example/pkg/logging"
+	"github.com/VINDA-98/gin-blog-api-example/service/cache_service"
 )
 
 type Tag struct {
