@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-一个基于 [EDDYCJY/go-gin-example](https://github.com/EDDYCJY/go-gin-example) 的 Gin 博客 API 示例。代码包括文章和标签的增删改查、JWT 中间件、GORM 与 MySQL 持久化、Redis 缓存和 Swagger 文档。仓库也包含图片上传、标签 Excel 导入导出，以及带二维码的文章海报生成示例。
+基于 [EDDYCJY/go-gin-example](https://github.com/EDDYCJY/go-gin-example) 的 Gin 博客 API 示例。以文章和标签的请求为入口，可查看 JWT 校验、Redis 缓存和 GORM 持久化如何配合。仓库还包含 Swagger 文档、图片上传、标签 Excel 导入导出和二维码海报生成示例。
 
 ## 阅读代码
 

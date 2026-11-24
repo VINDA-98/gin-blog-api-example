@@ -2,7 +2,7 @@
 
 [简体中文](README.zh-CN.md)
 
-A Gin example for a small blog API, based on [EDDYCJY/go-gin-example](https://github.com/EDDYCJY/go-gin-example). The code covers article and tag CRUD, JWT middleware, MySQL persistence via GORM, Redis caching, and Swagger documentation. It also includes examples of image upload, Excel tag import and export, and article poster generation with QR codes.
+A Gin blog API example based on [EDDYCJY/go-gin-example](https://github.com/EDDYCJY/go-gin-example). Follow article and tag requests from JWT-protected routes through Redis caching and GORM-backed MySQL persistence. The repository also includes Swagger documentation, image uploads, Excel tag import and export, and QR-code poster generation.
 
 ## Read the code
 
